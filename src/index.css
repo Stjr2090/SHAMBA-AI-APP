@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-shamba-green: #2D5A27;
+  --color-shamba-earth: #8B4513;
+  --color-shamba-sky: #E3F2FD;
+}
+
+@layer base {
+  body {
+    @apply bg-shamba-sky font-sans text-gray-900;
+  }
+}
+
+.sms-bubble {
+  @apply max-w-[85%] p-3 rounded-2xl text-sm leading-relaxed;
+}
+
+.sms-farmer {
+  @apply bg-white text-gray-800 self-end rounded-br-none shadow-sm;
+}
+
+.sms-shamba {
+  @apply bg-shamba-green text-white self-start rounded-bl-none shadow-md;
+}
+
+.char-counter {
+  @apply text-[10px] font-mono uppercase tracking-wider text-gray-400 mt-1;
+}
